@@ -48,7 +48,7 @@ public abstract class JdbcDao implements InitializingBean {
 
     /* ++++++++++++++++++++++++++ Initial and Validate +++++++++++++++++++++++ */
     @Override
-    public final void afterPropertiesSet() throws IllegalArgumentException {
+    public void afterPropertiesSet() throws IllegalArgumentException {
         validateJdbcTemplate();
     }
 
@@ -537,6 +537,7 @@ public abstract class JdbcDao implements InitializingBean {
     /**
      * Get active database connection
      * @return The database connection (null when cannot get)
+     * @throws SQLException When error
      */
     public Connection getConnection() throws SQLException {
         return getDataSource().getConnection();
