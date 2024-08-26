@@ -34,6 +34,7 @@ public class Criteria implements Serializable {
     private Integer size;
     private Map<String, String> sorts;
     private boolean skipRowCount;
+    private boolean existsOrderBy;
     private Long totalElement;
 
     public int getMySqlOffset() {
