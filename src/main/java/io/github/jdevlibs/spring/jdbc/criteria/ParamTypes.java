@@ -24,6 +24,7 @@ import java.sql.Types;
  */
 public enum ParamTypes {
     VARCHAR(Types.VARCHAR),
+    NVARCHAR(Types.NVARCHAR),
     CHAR(Types.CHAR),
     NUMERIC(Types.NUMERIC),
     DECIMAL(Types.DECIMAL),
